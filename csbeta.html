@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>
+sounds beta
+</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 ">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default adpanel">A-D</button>
+					<button type="button" class="btn btn-default elpanel">E-L</button>
+					<button type="button" class="btn btn-default mspanel">M-S</button>
+					<button type="button" class="btn btn-default vzpanel">V-Z</button>
+				</div>
+				<script>
+				$(".adpanel").click(adFunc);
+				function adFunc(){
+					$(".panelword2,.panelword3,.panelword4").hide()
+					$(".panelword1").show()
+				}
+				$(".elpanel").click(elFunc);
+				function elFunc(){
+					$(".panelword1,.panelword3,.panelword4").hide()
+					$(".panelword2").show()
+				}
+				$(".mspanel").click(msFunc);
+				function msFunc(){
+					$(".panelword1,.panelword2,.panelword4").hide()
+					$(".panelword3").show()
+				}
+				$(".vzpanel").click(vzFunc);
+				function vzFunc(){
+					$(".panelword1,.panelword2,.panelword3").hide()
+					$(".panelword4").show()
+				}
+				</script>
+				SOUND
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs nav-stacked nav-pills" style="height:95%;overflow-y:scroll">
+							<script>
+							var sounds=["AMBIENCE_RAIN", "AMBIENCE_THUNDER", "ANVIL_BREAK", "ANVIL_LAND", "ANVIL_USE", "ARROW_HIT", "BAT_DEATH", "BAT_HURT", "BAT_IDLE", "BAT_LOOP", "BAT_TAKEOFF", "BLAZE_BREATH", "BLAZE_DEATH", "BLAZE_HIT", "BURP", "CAT_HISS", "CAT_HIT", "CAT_MEOW", "CAT_PURR", "CAT_PURREOW", "CHEST_CLOSE", "CHEST_OPEN", "CHICKEN_EGG_POP", "CHICKEN_HURT", "CHICKEN_IDLE", "CHICKEN_WALK", "CLICK", "COW_HURT", "COW_IDLE", "COW_WALK", "CREEPER_DEATH", "CREEPER_HISS", "DIG_GRASS", "DIG_GRAVEL", "DIG_SAND", "DIG_SNOW", "DIG_STONE", "DIG_WOOD", "DIG_WOOL", "DONKEY_ANGRY", "DONKEY_DEATH", "DONKEY_HIT", "DONKEY_IDLE", "DOOR_CLOSE", "DOOR_OPEN", "DRINK"];
+							for(var i=0;sounds.length>i;i++){
+							if(i==0){
+							document.write('<li class="active panelword1"><a href="#'+sounds[i]+'" data-toggle="tab">'+sounds[i]+'</a></li>');
+								}else{
+									document.write('<li class="panelword1"><a href="#'+sounds[i]+'" data-toggle="tab">'+sounds[i]+'</a></li>');
+								}
+							}
+							</script>
+							<script>
+							var sounds=["EAT", "ENDERDRAGON_DEATH", "ENDERDRAGON_GROWL", "ENDERDRAGON_HIT", "ENDERDRAGON_WINGS", "ENDERMAN_DEATH", "ENDERMAN_HIT", "ENDERMAN_IDLE", "ENDERMAN_SCREAM", "ENDERMAN_STARE", "ENDERMAN_TELEPORT", "EXPLODE", "FALL_BIG", "FALL_SMALL", "FIRE", "FIRE_IGNITE", "FIREWORK_BLAST", "FIREWORK_BLAST2", "FIREWORK_LARGE_BLAST", "FIREWORK_LARGE_BLAST2", "FIREWORK_LAUNCH", "FIREWORK_TWINKLE", "FIREWORK_TWINKLE2", "FIZZ", "FUSE", "GHAST_CHARGE", "GHAST_DEATH", "GHAST_FIREBALL", "GHAST_MOAN", "GHAST_SCREAM", "GHAST_SCREAM2", "GLASS", "HORSE_ANGRY", "HORSE_ARMOR", "HORSE_BREATHE", "HORSE_DEATH", "HORSE_GALLOP", "HORSE_HIT", "HORSE_IDLE", "HORSE_JUMP", "HORSE_LAND", "HORSE_SADDLE", "HORSE_SKELETON_DEATH", "HORSE_SKELETON_HIT", "HORSE_SKELETON_IDLE", "HORSE_SOFT", "HORSE_WOOD", "HORSE_ZOMBIE_DEATH", "HORSE_ZOMBIE_HIT", "HORSE_ZOMBIE_IDLE", "HURT_FLESH", "IRONGOLEM_DEATH", "IRONGOLEM_HIT", "IRONGOLEM_THROW", "IRONGOLEM_WALK", "ITEM_BREAK", "ITEM_PICKUP", "LAVA", "LAVA_POP", "LEVEL_UP"];
+							for(var i=0;sounds.length>i;i++){
+								document.write('<li class="panelword2"><a href="#'+sounds[i]+'" data-toggle="tab">'+sounds[i]+'</a></li>');
+							}			
+							</script>
+							<script>
+							var sounds=["MAGMACUBE_JUMP", "MAGMACUBE_WALK", "MAGMACUBE_WALK2", "MINECART_BASE", "MINECART_INSIDE", "NOTE_BASS", "NOTE_BASS_DRUM", "NOTE_BASS_GUITAR", "NOTE_PIANO", "NOTE_PLING", "NOTE_SNARE_DRUM", "NOTE_STICKS", "ORB_PICKUP", "PIG_DEATH", "PIG_IDLE", "PIG_WALK", "PISTON_EXTEND", "PISTON_RETRACT", "PORTAL", "PORTAL_TRAVEL", "PORTAL_TRIGGER", "SHEEP_IDLE", "SHEEP_SHEAR", "SHEEP_WALK", "SHOOT_ARROW", "SILVERFISH_HIT", "SILVERFISH_IDLE", "SILVERFISH_KILL", "SILVERFISH_WALK", "SKELETON_DEATH", "SKELETON_HURT", "SKELETON_IDLE", "SKELETON_WALK", "SLIME_ATTACK", "SLIME_WALK", "SLIME_WALK2", "SPIDER_DEATH", "SPIDER_IDLE", "SPIDER_WALK", "SPLASH", "SPLASH2", "STEP_GRASS", "STEP_GRAVEL", "STEP_LADDER", "STEP_SAND", "STEP_SNOW", "STEP_STONE", "STEP_WOOD", "STEP_WOOL", "SUCCESSFUL_HIT", "SWIM"];
+							for(var i=0;sounds.length>i;i++){
+								document.write('<li class="panelword3"><a href="#'+sounds[i]+'" data-toggle="tab">'+sounds[i]+'</a></li>');
+							}
+							</script>
+							<script>
+							var sounds=["VILLAGER_DEATH", "VILLAGER_HAGGLE", "VILLAGER_HIT", "VILLAGER_IDLE", "VILLAGER_NO", "VILLAGER_YES", "WATER", "WITHER_DEATH", "WITHER_HURT", "WITHER_IDLE", "WITHER_SHOOT", "WITHER_SPAWN", "WOLF_BARK", "WOLF_DEATH", "WOLF_GROWL", "WOLF_HOWL", "WOLF_HURT", "WOLF_PANT", "WOLF_SHAKE", "WOLF_WALK", "WOLF_WHINE", "WOOD_CLICK", "ZOMBIE_DEATH", "ZOMBIE_HURT", "ZOMBIE_IDLE", "ZOMBIE_INFECT", "ZOMBIE_METAL", "ZOMBIE_PIG_ANGRY", "ZOMBIE_PIG_DEATH", "ZOMBIE_PIG_HURT", "ZOMBIE_PIG_IDLE", "ZOMBIE_REMEDY", "ZOMBIE_UNFECT", "ZOMBIE_WALK", "ZOMBIE_WOOD", "ZOMBIE_WOODBREAK"];
+							for(var i=0;sounds.length>i;i++){
+								document.write('<li class="panelword4"><a href="#'+sounds[i]+'" data-toggle="tab">'+sounds[i]+'</a></li>');
+							}
+							</script>
+ 				</ul>
+
+			
+			</div>
+			<div class="col-md-4">
+				setting
+				<form role="form">
+					<div class="tab-content soundname">
+							<script>
+								var sounds=["AMBIENCE_RAIN", "AMBIENCE_THUNDER", "ANVIL_BREAK", "ANVIL_LAND", "ANVIL_USE", "ARROW_HIT", "BAT_DEATH", "BAT_HURT", "BAT_IDLE", "BAT_LOOP", "BAT_TAKEOFF", "BLAZE_BREATH", "BLAZE_DEATH", "BLAZE_HIT", "BURP", "CAT_HISS", "CAT_HIT", "CAT_MEOW", "CAT_PURR", "CAT_PURREOW", "CHEST_CLOSE", "CHEST_OPEN", "CHICKEN_EGG_POP", "CHICKEN_HURT", "CHICKEN_IDLE", "CHICKEN_WALK", "CLICK", "COW_HURT", "COW_IDLE", "COW_WALK", "CREEPER_DEATH", "CREEPER_HISS", "DIG_GRASS", "DIG_GRAVEL", "DIG_SAND", "DIG_SNOW", "DIG_STONE", "DIG_WOOD", "DIG_WOOL", "DONKEY_ANGRY", "DONKEY_DEATH", "DONKEY_HIT", "DONKEY_IDLE", "DOOR_CLOSE", "DOOR_OPEN", "DRINK", "EAT", "ENDERDRAGON_DEATH", "ENDERDRAGON_GROWL", "ENDERDRAGON_HIT", "ENDERDRAGON_WINGS", "ENDERMAN_DEATH", "ENDERMAN_HIT", "ENDERMAN_IDLE", "ENDERMAN_SCREAM", "ENDERMAN_STARE", "ENDERMAN_TELEPORT", "EXPLODE", "FALL_BIG", "FALL_SMALL", "FIRE", "FIRE_IGNITE", "FIREWORK_BLAST", "FIREWORK_BLAST2", "FIREWORK_LARGE_BLAST", "FIREWORK_LARGE_BLAST2", "FIREWORK_LAUNCH", "FIREWORK_TWINKLE", "FIREWORK_TWINKLE2", "FIZZ", "FUSE", "GHAST_CHARGE", "GHAST_DEATH", "GHAST_FIREBALL", "GHAST_MOAN", "GHAST_SCREAM", "GHAST_SCREAM2", "GLASS", "HORSE_ANGRY", "HORSE_ARMOR", "HORSE_BREATHE", "HORSE_DEATH", "HORSE_GALLOP", "HORSE_HIT", "HORSE_IDLE", "HORSE_JUMP", "HORSE_LAND", "HORSE_SADDLE", "HORSE_SKELETON_DEATH", "HORSE_SKELETON_HIT", "HORSE_SKELETON_IDLE", "HORSE_SOFT", "HORSE_WOOD", "HORSE_ZOMBIE_DEATH", "HORSE_ZOMBIE_HIT", "HORSE_ZOMBIE_IDLE", "HURT_FLESH", "IRONGOLEM_DEATH", "IRONGOLEM_HIT", "IRONGOLEM_THROW", "IRONGOLEM_WALK", "ITEM_BREAK", "ITEM_PICKUP", "LAVA", "LAVA_POP", "LEVEL_UP", "MAGMACUBE_JUMP", "MAGMACUBE_WALK", "MAGMACUBE_WALK2", "MINECART_BASE", "MINECART_INSIDE", "NOTE_BASS", "NOTE_BASS_DRUM", "NOTE_BASS_GUITAR", "NOTE_PIANO", "NOTE_PLING", "NOTE_SNARE_DRUM", "NOTE_STICKS", "ORB_PICKUP", "PIG_DEATH", "PIG_IDLE", "PIG_WALK", "PISTON_EXTEND", "PISTON_RETRACT", "PORTAL", "PORTAL_TRAVEL", "PORTAL_TRIGGER", "SHEEP_IDLE", "SHEEP_SHEAR", "SHEEP_WALK", "SHOOT_ARROW", "SILVERFISH_HIT", "SILVERFISH_IDLE", "SILVERFISH_KILL", "SILVERFISH_WALK", "SKELETON_DEATH", "SKELETON_HURT", "SKELETON_IDLE", "SKELETON_WALK", "SLIME_ATTACK", "SLIME_WALK", "SLIME_WALK2", "SPIDER_DEATH", "SPIDER_IDLE", "SPIDER_WALK", "SPLASH", "SPLASH2", "STEP_GRASS", "STEP_GRAVEL", "STEP_LADDER", "STEP_SAND", "STEP_SNOW", "STEP_STONE", "STEP_WOOD", "STEP_WOOL", "SUCCESSFUL_HIT", "SWIM", "VILLAGER_DEATH", "VILLAGER_HAGGLE", "VILLAGER_HIT", "VILLAGER_IDLE", "VILLAGER_NO", "VILLAGER_YES", "WATER", "WITHER_DEATH", "WITHER_HURT", "WITHER_IDLE", "WITHER_SHOOT", "WITHER_SPAWN", "WOLF_BARK", "WOLF_DEATH", "WOLF_GROWL", "WOLF_HOWL", "WOLF_HURT", "WOLF_PANT", "WOLF_SHAKE", "WOLF_WALK", "WOLF_WHINE", "WOOD_CLICK", "ZOMBIE_DEATH", "ZOMBIE_HURT", "ZOMBIE_IDLE", "ZOMBIE_INFECT", "ZOMBIE_METAL", "ZOMBIE_PIG_ANGRY", "ZOMBIE_PIG_DEATH", "ZOMBIE_PIG_HURT", "ZOMBIE_PIG_IDLE", "ZOMBIE_REMEDY", "ZOMBIE_UNFECT", "ZOMBIE_WALK", "ZOMBIE_WOOD", "ZOMBIE_WOODBREAK"];							for(var i=0;sounds.length>i;i++){
+								if(i==0){
+									document.write('<div class="tab-pane active" id="'+sounds[i]+'">'+sounds[i]+'</div>');
+								}else{
+									document.write('<div class="tab-pane" id="'+sounds[i]+'">'+sounds[i]+'</div>');
+								}
+							}
+							</script>
+					</div>	
+				  <div class="form-group">
+					<label for="volume">VOL</label>
+					<input type="number" class="form-control" id="volume" placeholder="volume*10">
+				  </div>
+				  <div class="form-group">
+					<label for="pitch">Pitch</label>
+					<input type="number" class="form-control" id="pitch" placeholder="Pitch*10">
+				  </div>
+				  <div class="form-group">
+					<label for="delay">delay</label>
+					<input type="number" class="form-control" id="delay" placeholder="delay in tick">
+				  </div>
+				  <button type="button" class="btn btn-Primary buttons123">outputbutton</button>
+
+				</form>
+							
+
+			</div>
+			
+			<div class="col-md-4">
+				sounds_source
+						<!-- Tab panes -->
+				<textarea class="form-control textstyle" rows="3"></textarea>
+				 <button type="button" class="btn btn-danger buttons456">deletebutton</button>
+			</div>
+		</div>
+	</div>
+  
+</body>
+<script>
+$('.buttons123').click(function(xpot){
+	xpot.preventDefault();
+	var beforetext=$('.textstyle').val()
+	
+	 beforetext+=$(".soundname .active").html()
+	 beforetext+='-'
+	 beforetext+=$('#volume').val()/10
+	 beforetext+='-'
+	 beforetext+=$('#pitch').val()/10
+	 beforetext+='-'
+	 beforetext+=$('#delay').val()/1
+	
+	$('.textstyle').val(beforetext+',')
+	
+});
+$('.buttons456').click(function(xpot){
+	xpot.preventDefault();
+	
+	
+	$('.textstyle').val("")
+	
+});
+</script>
+</html>

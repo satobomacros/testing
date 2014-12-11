@@ -3,6 +3,9 @@
 <title>
 sounds beta
 </title>
+    <script type="text/javascript" src="lib/enchant.js"></script>
+    <script type="text/javascript" src="lib/ui.enchant.js"></script>
+    <script type="text/javascript" src="main.js"></script>
  <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
@@ -84,6 +87,7 @@ sounds beta
 			</div>
 			<div class="col-md-4">
 				setting
+				<div id="enchant-stage"style="width:100%;height:100%"></div>
 				<form role="form">
 					<div class="tab-content soundname">
 							<script>
@@ -134,7 +138,7 @@ $('.buttons123').click(function(xpot){
 	 beforetext+='-'
 	 beforetext+=$('#volume').val()/10
 	 beforetext+='-'
-	 beforetext+=$('#pitch').val()/10
+	 beforetext+=($('#pitch').val()/10).toFixed(2)
 	 beforetext+='-'
 	 beforetext+=$('#delay').val()/1
 	
